@@ -1,0 +1,195 @@
+{
+    "hero": {
+      "headline": "Your Affordable Dream Home Awaits",
+      "subtext": "Discover safe, budget-friendly rentals across Ethiopia — tailored for you.",
+      "browse": "Browse Listings"
+    },
+ "nav": {
+  "home": "Home",
+  "browse": "Browse",
+  "about": "About us",
+  "contact": "Contact",
+  "login": "Login",
+  "signup": "Sign Up",
+  "postProperty": "Post Property",
+  "profile": "Profile",
+  "settings": "Settings",
+    "logout": "Logout"
+} ,
+
+  "home": {
+    "discoverTitle": "Discover Your Dream Home",
+    "discoverDescription": "Find your perfect home without the hassle of brokers. Our AI-powered platform matches you with the ideal house based on your preferences.",
+    "feature1Title": "Trustworthy Connections",
+    "feature1Description": "Connect directly with renters and landowners, building trust and transparency in every transaction.",
+    "feature2Title": "Personalized Recommendations",
+    "feature2Description": "Receive tailored house recommendations based on your desired size and number of rooms.",
+    "feature3Title": "Interactive Map View",
+    "feature3Description": "Explore available properties on a map view to visualize the location and surroundings."
+  },
+  "Contact" : {
+    "connectRentersLandowners": "Connect Renters and Landowners with Ease",
+    "easyConnectionText": "Email us or call our customer support for more information and to make connections seamlessly.",
+    "email": "Email",
+    "phone": "Phone",
+    "contactUs": "Contact Us"
+  },
+  "testimonials": {
+    "title": "Trusted by Renters & Landlords",
+    "subtitle": "Don't just take our word for it. Here's what our community says.",
+    "cta": "Join Our Community",
+    "1": {
+      "name": "John D.",
+      "role": "Renter • New York",
+      "quote": "Found my perfect apartment in 3 days! The transparent pricing saved me from hidden fees I'd encountered elsewhere."
+    }
+  },
+  "footer": {
+    "description": "Your trusted platform for affordable rentals across Ethiopia.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "address": "Bole Road, Addis Ababa, Ethiopia",
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscribe for rental tips and offers",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "about": {
+    "heroTitle": "About RentEasy",
+    "heroSubtitle": "Transforming the way Ethiopians find affordable housing",
+    "teamAlt": "RentEasy team working together",
+    "ourStory": "Our Story",
+    "storyPart1": "Founded in 2023, RentEasy began with a simple mission...",
+    "storyPart2": "After experiencing the challenges of rental markets firsthand...",
+    "ourValues": "Our Values",
+    "value1Title": "Affordable Housing",
+    "value1Desc": "We prioritize listings that offer real value...",
+    "value2Title": "Nationwide Access",
+    "value3Title": "Verified Listings",
+    "value4Title": "Community Focus",
+    "joinUs": "Join Our Mission",
+    "ctaText": "Whether you're looking to rent or list a property...",
+    "ctaButton": "Get Started Today"
+  } ,
+  "contactus": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help with your rental needs",
+    "infoTitle": "Get in Touch",
+    "addressTitle": "Our Office",
+    "address": "Bole Road, Addis Ababa, Ethiopia",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "hoursTitle": "Working Hours",
+    "hours": "Mon-Fri: 8:30AM - 5:30PM",
+    "formTitle": "Send Us a Message",
+    "nameLabel": "Your Name",
+    "emailLabel": "Email Address",
+    "messageLabel": "Your Message",
+    "submitButton": "Send Message",
+    "findUs": "Find Us on the Map",
+    "successMessage": "Thank you! We'll contact you soon."
+  },
+  "signup": {
+    "title": "Sign Up",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "role": "Role",
+    "customer": "Customer",
+    "landowner": "Landowner",
+    "button": "Sign Up",
+    "passwordMismatch": "Passwords do not match.",
+    "success": "Signup successful! You can now log in.",
+    "error": "Signup failed."
+  }
+,
+"common": {
+    "close": "Close",
+    "loading": "Loading...",
+    "submit": "Submit",
+    "back": "Back",
+    "error": "Error occurred"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "submit": "Sign In",
+    "forgotPassword": "Forgot password?",
+    "resetTitle": "Reset Password",
+    "resetSubmit": "Send Reset Link",
+    "backToLogin": "Back to login",
+    "loading": "Processing...",
+    "success": "Login successful!",
+    "resetSuccess": "Reset email sent! Check your inbox.",
+    "errors": {
+      "emailRequired": "Email is required",
+      "passwordRequired": "Password is required",
+      "general": "An error occurred during login",
+      "resetFailed": "Failed to send reset email"
+    }},
+    "reset": {
+    "checkingToken": "Verifying Reset Link",
+    "verifyingLink": "Please wait while we verify your password reset link",
+    "invalidTokenTitle": "Invalid Reset Link",
+    "requestNewLink": "Request New Reset Link",
+    "tokenCheckFailed": "Failed to verify reset link"
+  } ,
+  "addListing": {
+  "title": "Submit a Property",
+  "name": "Property Name",
+  "namePlaceholder": "e.g. Luxury Villa",
+  "location": "Location (City)",
+  "locationPlaceholder": "Addis Ababa",
+  "exactLocation": "Exact Place (e.g. Bole, Jemo...)",
+  "exactLocationPlaceholder": "e.g. Bole, Lebu, Jemo",
+  "price": "Monthly Rent Price (ETB)",
+  "pricePlaceholder": "e.g. 20,000",
+  "houseType": "House Type",
+  "selectType": "Select Type",
+    "houseTypes": {
+    "apartment": "Apartment",
+    "villa": "Villa",
+    "condominium": "Condominium",
+    "singleRoom": "Single Room"
+  },
+  "bedrooms": "Number of Bedrooms",
+  "bathrooms": "Number of Bathrooms",
+  "area": "Area (in m²)",
+  "amenities": "Amenities (Optional)",
+ "amenitiesOptions": {
+    "water": "Water",
+    "electricity": "Electricity",
+    "parking": "Parking"
+  },
+  "uploadImages": "Upload House Images",
+  "uploadDocuments": "Upload proof of ownership or rental rights (e.g., rental contract, Kebele/Woreda letter, water/electricity bills).",
+  "submit": "Submit for Review",
+  "cancel": "Cancel" ,
+  "subcity": "Sub-City",
+  "subcityPlaceholder": "e.g. Bole, Yeka, Kirkos",
+  "subcities": [
+    { "value": "Addis Ketema", "label_en": "Addis Ketema", "label_am": "አዲስ ከተማ" },
+    { "value": "Akaky Kaliti", "label_en": "Akaky Kaliti", "label_am": "አካኪ ቃሊቲ" },
+    { "value": "Arada", "label_en": "Arada", "label_am": "አራዳ" },
+    { "value": "Bole", "label_en": "Bole", "label_am": "ቦሌ" },
+    { "value": "Gullele", "label_en": "Gullele", "label_am": "ጉሌሌ" },
+    { "value": "Kirkos", "label_en": "Kirkos", "label_am": "ቂርቆስ" },
+    { "value": "Kolfe Keranio", "label_en": "Kolfe Keranio", "label_am": "ኮልፌ ቀራንዮ" },
+    { "value": "Lideta", "label_en": "Lideta", "label_am": "ልደታ" },
+    { "value": "Nifas Silk‑Lafto", "label_en": "Nifas Silk‑Lafto", "label_am": "ንፋስ ስልክ‑ላፍቶ" },
+    { "value": "Yeka", "label_en": "Yeka", "label_am": "የካ" }
+  ]
+
+  }
+
+  }
+
+  

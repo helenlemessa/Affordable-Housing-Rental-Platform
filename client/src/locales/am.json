@@ -1,0 +1,205 @@
+{
+    "hero": {
+      "headline": "የእርስዎ ተመጣጣኝ የመኖሪያ ቤት እንደተፈለገው ነው",
+      "subtext": "በኢትዮጵያ ውስጥ ደህና የተሟላ ዋጋ ያላቸውን ቤቶች ያግኙ።",
+      "browse": "ዝርዝሮችን ይመልከቱ"
+    },
+ "nav": {
+  "home": "መነሻ",
+  "browse": "መሳሰሉን ይመልከቱ",
+  "about": "ስለእኛ",
+  "contact": "አግኙን",
+  "login": "ግባ",
+  "signup": "መመዝገብ",
+  "postProperty": "ቤት አስቀምጥ",
+  "profile": "መገለጫ",
+  "settings": "ቅንብሮች",
+    "logout": "ውጣ"
+} ,
+
+  "home": {
+    "discoverTitle": "ስለእርስዎ ምርጥ ቤትን ያግኙ",
+    "discoverDescription": "በባለቤትና ተከራዩት እንደተቀረ ተያያዥ እንዲሆኑ በማይገባ ባለኝ ሁሉንም እቀርባለሁ።",
+    "feature1Title": "እርግጠኛ ግንኙነቶች",
+    "feature1Description": "በማቅረብ በቅርጸት እምነቶች ሆኖ አስተማሪ ይሆናል።",
+    "feature2Title": "በማህበራት እንገምጋለን",
+    "feature2Description": "በተመረጠ ስፍራ እና በተመረጠ ማህበራት በሚወዳጅ ቤት እንማራለን",
+    "feature3Title": "ማኅበረ እቅዶች",
+    "feature3Description": "በምእመናን የሚያወሩ ስምምነቶች ይሆናል"
+  } ,
+  "Contact" : {
+    "connectRentersLandowners": "እባኮትን ተከራካሪዎችን እና ቤት ባለቤቶችን በቀላሉ እንድትያዙ",
+    "easyConnectionText": "ለማንበብ እና ለቀላል እቅድ ማሳሰብ ማስተናገድ እና ስለ እባኮት እና ስለ ዝርዝር መረጃ በኢሜይል ለማሳወቅ ወይም በስልኩ እንድትተገኙ።",
+    "email": "ኢሜይል",
+    "phone": "ስልክ",
+    "contactUs": "እኛን ያነጋግሩ"
+  },
+  "testimonials": {
+    "title": "በተከራዮች እና በባለቤቶች የታመነ",
+    "subtitle": "ቃላችንን ብቻ አትያዝ። ማህበረሰባችን የሚለውን ይመልከቱ።",
+    "cta": "ወደ ማህበረሰባችን ይቀላቀሉ",
+    "1": {
+      "name": "ዮሐንስ ደ.",
+      "role": "ተከራይ • ኒው ዮርክ",
+      "quote": "ተስማሚ አፓርታሜን በ3 ቀናት ውስጥ አገኘሁ! ግልጽ �ሚያ ከሌሎች ተደባለቁ ክፍያዎች አዳነኝ።"
+    },
+    "2": {
+      "name": "ዮሐንስ ደ.",
+      "role": "ተከራይ • ኒው ዮርክ",
+      "quote": "ተስማሚ አፓርታሜን በ3 ቀናት ውስጥ አገኘሁ! ግልጽ �ሚያ ከሌሎች ተደባለቁ ክፍያዎች አዳነኝ።"
+    },
+    "3": {
+      "name": "ዮሐንስ ደ.",
+      "role": "ተከራይ • ኒው ዮርክ",
+      "quote": "ተስማሚ አፓርታሜን በ3 ቀናት ውስጥ አገኘሁ! ግልጽ �ሚያ ከሌሎች ተደባለቁ ክፍያዎች አዳነኝ።"
+    } },
+    
+
+  "footer": {
+    "description": "በኢትዮጵያ ውስጥ ለተመጣጣኝ የቤት ኪራይ አገልግሎት የታመነ መድረክ።",
+    "quickLinks": "ፈጣን አገናኞች",
+    "contact": "አግኙን",
+    "address": "ቦሌ መንገድ፣ አዲስ አበባ፣ ኢትዮጵያ",
+    "newsletter": "የዜና ደብተር",
+    "newsletterText": "ለቤት ኪራይ ምክሮች እና ቅናሾች ይመዝገቡ",
+    "emailPlaceholder": "የኢሜል አድራሻዎ",
+    "subscribe": "መዝገብ",
+    "rights": "ሁሉም መብቶች የተጠበቁ ናቸው",
+    "privacy": "የግላዊነት ፖሊሲ",
+    "terms": "የአገልግሎት ውሎች"
+  },
+  "about": {
+    "heroTitle": "ስለ RentEasy",
+    "heroSubtitle": "በተመጣጣኝ ዋጋ የሚታከሩ ቤቶችን የማግኘት መንገድ እየቀየርን ነው",
+    "teamAlt": "የRentEasy ቡድን አብሮ እየሰራ ነው",
+    "ourStory": "የእኛ ታሪክ",
+    "storyPart1": "በ2023 የተመሠረተው RentEasy ቀላል ተልእኮ አለው...",
+    "storyPart2": "የቤት ኪራይ ገበያዎችን በቀጥታ ከመረመርን በኋላ...",
+    "ourValues": "የእኛ እሴቶች",
+    "value1Title": "ተመጣጣኝ የመኖሪያ ቤቶች",
+    "value1Desc": "በኢትዮጵያ ትልቅ ዋጋ ያላቸው የመኖሪያ ቤቶችን...",
+    "value2Title": "በሀገር አቀፍ ደረጃ መዳረሻ",
+    "value3Title": "ተረጋግጠው የቀረቡ ዝርዝሮች",
+    "value4Title": "በማህበረሰብ ላይ ያተኮረ",
+    "joinUs": "በተልእኮችን ይቀላቀሉ",
+    "ctaText": "ቤት ለመክራይ ወይም ለመስተዳደር ከፈለጉ...",
+    "ctaButton": "ዛሬ ይጀምሩ"
+  } ,
+  "contactus": {
+    "title": "አግኙን",
+    "subtitle": "ለኪራይ ፍላጎትዎ እዚህ አለን",
+    "infoTitle": "አግኙን",
+    "addressTitle": "ቢሮችን",
+    "address": "ቦሌ መንገድ፣ አዲስ አበባ፣ ኢትዮጵያ",
+    "phoneTitle": "ስልክ",
+    "emailTitle": "ኢሜይል",
+    "hoursTitle": "የስራ ሰዓት",
+    "hours": "ሰኞ-ዓርብ፡ 8፡30 ጥዋት - 5፡30 ምሽት",
+    "formTitle": "መልእክት ይላኩልን",
+    "nameLabel": "ስምዎ",
+    "emailLabel": "ኢሜይል አድራሻ",
+    "messageLabel": "መልእክትዎ",
+    "submitButton": "መልእክት ላክ",
+    "findUs": "በካርታው ውስጥ ያግኙን",
+    "successMessage": "አመሰግናለሁ! በቅርቡ እንገናኝዎታለን።"
+  },
+  "signup": {
+    "title": "መመዝገብ",
+    "name": "ስም",
+    "email": "ኢሜይል",
+    "phone": "ስልክ",
+    "password": "የይለፍ ቃል",
+    "confirmPassword": "የይለፍ ቃል አረጋግጥ",
+    "role": "ሚና",
+    "customer": "ደንበኛ",
+    "landowner": "መሬት ባለቤት",
+    "button": "መመዝገብ",
+    "passwordMismatch": "የይለፍ ቃሎቹ አይመሳሰሉም።",
+    "success": "መመዝገብ ተሳክቷል። አሁን መግባት ይችላሉ።",
+    "error": "መመዝገብ አልተሳካም።"
+  },
+  "common": {
+    "close": "ገጠመ",
+    "loading": "በመጫን ላይ...",
+    "submit": "አስገባ",
+    "back": "ተመለስ",
+    "error": "ስህተት ተከስቷል"
+  },
+  "login": {
+    "title": "ግባ",
+    "email": "ኢሜይል",
+    "emailPlaceholder": "your@email.com",
+    "password": "የይለፍ ቃል",
+    "passwordPlaceholder": "የይለፍ ቃልዎን ያስገቡ",
+    "submit": "ግባ",
+    "forgotPassword": "የይለፍ ቃል ረሳኽው?",
+    "resetTitle": "የይለፍ ቃል ዳግም አስጀምር",
+    "resetSubmit": "አገናኝ ላክ",
+    "backToLogin": "ወደ መግቢያ ተመለስ",
+    "loading": "በማቀናበር ላይ...",
+    "success": "በተሳካ ሁኔታ ገብተዋል!",
+    "resetSuccess": "የዳግም ማስጀመሪያ ኢሜይል ተልኳል! መልዕክት ሳጥንዎን ያረጋግጡ።",
+    "errors": {
+      "emailRequired": "ኢሜይል ያስፈልጋል",
+      "passwordRequired": "የይለፍ ቃል ያስፈልጋል",
+      "general": "በመግቢያ ጊዜ ስህተት ተከስቷል",
+      "resetFailed": "የዳግም ማስጀመሪያ ኢሜይል ላክ አልተሳካም"
+    }
+  },
+ "addListing": {
+  "title": "አዲስ ንብረት አስቀምጥ",
+  "name": "የንብረቱ ስም",
+  "namePlaceholder": "ምሳ. ፈቃደኛ አፓርታማ",
+  "location": "ከተማ (አካባቢ)",
+  "locationPlaceholder": "አዲስ አበባ",
+  "exactLocation": "ትክክለኛ አካባቢ",
+  "exactLocationPlaceholder": "ምሳ. ቦሌ, ሌቡ, ጀሞ",
+  "price": "የወርሃዊ ኪራይ ዋጋ (በብር)",
+  "pricePlaceholder": "ምሳ. 20,000",
+  "houseType": "የቤት አይነት",
+  "selectType": "አይነቱን ይምረጡ",
+  
+  "subcity": "Sub-City",
+  "subcityPlaceholder": "e.g. Bole, Yeka, Kirkos",
+  "subcities": [
+    { "value": "Addis Ketema", "label_en": "Addis Ketema", "label_am": "አዲስ ከተማ" },
+    { "value": "Akaky Kaliti", "label_en": "Akaky Kaliti", "label_am": "አካኪ ቃሊቲ" },
+    { "value": "Arada", "label_en": "Arada", "label_am": "አራዳ" },
+    { "value": "Bole", "label_en": "Bole", "label_am": "ቦሌ" },
+    { "value": "Gullele", "label_en": "Gullele", "label_am": "ጉሌሌ" },
+    { "value": "Kirkos", "label_en": "Kirkos", "label_am": "ቂርቆስ" },
+    { "value": "Kolfe Keranio", "label_en": "Kolfe Keranio", "label_am": "ኮልፌ ቀራንዮ" },
+    { "value": "Lideta", "label_en": "Lideta", "label_am": "ልደታ" },
+    { "value": "Nifas Silk‑Lafto", "label_en": "Nifas Silk‑Lafto", "label_am": "ንፋስ ስልክ‑ላፍቶ" },
+    { "value": "Yeka", "label_en": "Yeka", "label_am": "የካ" }
+  ],
+  "bedrooms": "መኝታ ቤቶች ብዛት",
+  "bathrooms": "መታጠቢያ ቤቶች ብዛት",
+  "area": "አካባቢ (በካሬ ሜትር)",
+  "amenities": "ተጨማሪ አገልግሎቶች (አስፈላጊ አይደሉም)",
+  "amenitiesOptions": {
+    "water": "ውሃ",
+    "electricity": "ኤሌክትሪክ",
+    "parking": "መኪና ቦታ"
+  },
+  "houseTypes": {
+    "apartment": "አፓርታማ",
+    "villa": "ቪላ",
+    "condominium": "ኮንዶሚኒየም",
+    "singleRoom": "አንድ ክፍል ክፍል"
+  },
+  "uploadImages": "የቤቱ ፎቶዎችን ስቀል",
+  "uploadDocuments": " የቤት ማረጋገጫ ሰነዶች (እንደ የኪራይ ውል፣ የቀበሌ/ወረዳ ደረሰኝ፣ የውሃ/ኤሌክትሪክ ክፍያ ደረሰኝ) ያስገቡ",
+  "submit": "ለእውቅና አስገባ",
+  "cancel": "ደምስስ"
+}
+
+
+ 
+   
+  }
+
+
+
+  
+  
