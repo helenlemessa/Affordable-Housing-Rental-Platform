@@ -20,7 +20,7 @@ const AboutUs = React.lazy(() => import("./pages/AboutUs"));
 const ContactPage = React.lazy(() => import("./pages/ContactPage"));
 const Signup = React.lazy(() => import("./pages/signup"));
 const NotificationsPage = React.lazy(() => import("./pages/Notifications")); // Add this
-import AdminRoute from './components/AdminRoute';
+import AdminRoute from './Components/AdminRoute';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminLogin from './pages/admin/AdminLogin';
 import PendingListings from './pages/admin/PendingListings';
