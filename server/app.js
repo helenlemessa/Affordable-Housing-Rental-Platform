@@ -17,6 +17,19 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// [app.js](http://_vscodecontentref_/2) (or server.js) — add very carefully for testing only
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://affordable-housing-rental-platform.vercel.app');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+  if (req.headers['access-control-request-private-network']) {
+    res.setHeader('Access-Control-Allow-Private-Network', 'true');
+  }
+  if (req.method === 'OPTIONS') return res.sendStatus(204);
+  next();
+});
+
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/profile', require('./routes/profile'));
