@@ -18,7 +18,7 @@ export default function Browse() {
   useEffect(() => {
     const fetchApprovedListings = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/listings/approved', {
+        const response = await fetch('https://affordable-housing-backend.onrender.com/api/listings/approved', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json'
