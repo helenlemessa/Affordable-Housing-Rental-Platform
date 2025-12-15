@@ -24,7 +24,7 @@ export default function ListingDetail({ setShowLoginModal }) {
     const fetchData = async () => {
       try {
         console.log('🔄 Fetching listing details for:', id);
-        const listingResponse = await axios.get(`/listings/${id}`);
+        const listingResponse = await axios.get(`${import.meta.env.VITE_API_URL}/listings/${id}`);
         
         if (!listingResponse.data) {
           throw new Error('Listing not found');
