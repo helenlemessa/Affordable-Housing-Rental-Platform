@@ -7,29 +7,40 @@ const jwt = require('jsonwebtoken'); // ADD THIS
 
 const app = express();
 
-// Middleware
-app.use(cookieParser());
-app.use(cors({
-  origin: ['https://affordable-housing-rental-platform.vercel.app', "http://127.0.0.1:5173",  'http://localhost:5174',                                 // Your current local dev
-    'http://localhost:5173'],                             // Your current local dev 
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-}));
-app.use(express.json());
+// Remove ALL other CORS code and use ONLY this:
 
-// [app.js](http://_vscodecontentref_/2) (or server.js) — add very carefully for testing only
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://affordable-housing-rental-platform.vercel.app');
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
-  if (req.headers['access-control-request-private-network']) {
-    res.setHeader('Access-Control-Allow-Private-Network', 'true');
-  }
-  if (req.method === 'OPTIONS') return res.sendStatus(204);
-  next();
-});
+const corsOptions = {
+  origin: (origin, callback) => {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    const allowedOrigins = [
+      'https://affordable-housing-rental-platform.vercel.app',
+      'http://localhost:5173',
+      'http://localhost:5174',
+      'http://127.0.0.1:5173',
+      'http://127.0.0.1:5174'
+    ];
+    
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      console.log('CORS blocked origin:', origin);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  exposedHeaders: ['Content-Range', 'X-Content-Range'],
+  optionsSuccessStatus: 204
+};
+
+app.use(cors(corsOptions));
+app.use(cookieParser());
+app.use(express.json());
+// REMOVE the duplicate CORS middleware below!
+ 
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
