@@ -1,3 +1,4 @@
+import { API_ENDPOINTS } from '../config/api';
 export const checkAuth = async () => {
   try {
     // 1. Get token from all possible sources
@@ -12,7 +13,7 @@ export const checkAuth = async () => {
     }
 
     // 2. Verify token with backend
-    const response = await fetch('http://localhost:5000/api/auth/verify', {
+  const response = await fetch(API_ENDPOINTS.AUTH_VERIFY, {
       credentials: 'include',
       headers: {
         'Authorization': `Bearer ${token}`,

@@ -1,7 +1,7 @@
 // src/components/AdminRoute.jsx
 import { useEffect, useState } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
-
+import { API_ENDPOINTS } from '../config/api';
 const AdminRoute = ({ children }) => {
   const [authState, setAuthState] = useState({ 
     status: 'loading',
@@ -18,7 +18,7 @@ const AdminRoute = ({ children }) => {
       throw new Error('No admin token found');
     }
 
-    const response = await fetch('http://localhost:5000/api/admin/verify', {
+   const response = await fetch(API_ENDPOINTS.ADMIN_VERIFY, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
-
+import { API_ENDPOINTS } from '../config/api';
 const AddListing = ({ currentUser, onClose }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -101,7 +101,7 @@ const handleSubmit = async (e) => {
       data.append('documents', doc);
     });
 
-    const response = await fetch("http://localhost:5000/api/listings/add", {
+   const response = await fetch(API_ENDPOINTS.LISTINGS_ADD, { 
       method: "POST",
       credentials: "include",
       body: data,

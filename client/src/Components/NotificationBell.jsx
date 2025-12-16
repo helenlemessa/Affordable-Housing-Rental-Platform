@@ -3,7 +3,7 @@ import axios from '../api/axios';
 import { Bell } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-
+import { API_ENDPOINTS } from '../config/api';
 const NotificationBell = () => {
   const [notifications, setNotifications] = useState([]);
   const [unreadCount, setUnreadCount] = useState(0);
@@ -154,7 +154,7 @@ const NotificationBell = () => {
     return;
   }
 
-  const wsUrl = `ws://localhost:5000/ws/notifications?token=${encodeURIComponent(token)}`;
+  const wsUrl = `${API_ENDPOINTS.WS_NOTIFICATIONS}?token=${encodeURIComponent(token)}`;
   const newSocket = new WebSocket(wsUrl);
   setSocket(newSocket);
 

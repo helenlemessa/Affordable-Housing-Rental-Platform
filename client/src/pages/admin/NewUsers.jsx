@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { API_ENDPOINTS } from '../config/api';
 export default function NewUsers() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -15,7 +15,7 @@ export default function NewUsers() {
           throw new Error('No authentication token found');
         }
 
-        const response = await fetch('http://localhost:5000/api/admin/users/new', {
+        const response = await fetch(API_ENDPOINTS.ADMIN_USER_NEW, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'

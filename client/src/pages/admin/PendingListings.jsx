@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { API_ENDPOINTS } from '../config/api';
 export default function PendingListings() {
   const [listings, setListings] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -20,7 +20,7 @@ export default function PendingListings() {
           throw new Error('No authentication token found');
         }
 
-        const response = await fetch('http://localhost:5000/api/admin/pending-listings', {
+       const response = await fetch(API_ENDPOINTS.ADMIN_PENDING_LISTINGS, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'

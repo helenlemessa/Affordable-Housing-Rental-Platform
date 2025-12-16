@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DashboardCard from '../../Components/DashboardCard';
-
+import { API_ENDPOINTS } from '../config/api';
 export default function AdminDashboard() {
   const [stats, setStats] = useState(null);
   const [error, setError] = useState(null);
@@ -17,7 +17,7 @@ export default function AdminDashboard() {
           throw new Error('No authentication token found');
         }
 
-        const response = await fetch('http://localhost:5000/api/admin/stats', {
+        const response = await fetch(API_ENDPOINTS.ADMIN_STATUS, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'

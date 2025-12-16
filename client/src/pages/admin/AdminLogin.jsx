@@ -1,7 +1,7 @@
 // src/pages/admin/AdminLogin.jsx
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-
+import { API_ENDPOINTS } from '../config/api';
 export default function AdminLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -15,7 +15,7 @@ const handleSubmit = async (e) => {
   setIsLoading(true);
 
   try {
-    const response = await fetch('http://localhost:5000/api/auth/admin/login', {
+    const response = await fetch(API_ENDPOINTS.ADMIN_LOGIN, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
