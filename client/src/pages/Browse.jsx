@@ -1,6 +1,7 @@
 // src/pages/Browse.jsx
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { API_ENDPOINTS } from '../config/api';
 const getApiBaseUrl = () => {
   // Check multiple possible sources
   const envUrl = import.meta.env.VITE_API_URL;
@@ -32,7 +33,7 @@ export default function Browse() {
     const fetchApprovedListings = async () => {
       try {
         const API_BASE_URL = getApiBaseUrl();
-const response = await fetch(`${API_BASE_URL}/listings/approved`, {
+const response = await fetch(API_ENDPOINTS.LISTINGS_APPROVED,{
   method: 'GET',
   headers: {
     'Content-Type': 'application/json'
