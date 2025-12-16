@@ -1,7 +1,20 @@
 // src/pages/Browse.jsx
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+const getApiBaseUrl = () => {
+  // Check multiple possible sources
+  const envUrl = import.meta.env.VITE_API_URL;
+  const hardcodedUrl = "https://affordable-housing-backend.onrender.com/api";
+  
+  console.log("Debug - Environment URL:", envUrl);
+  console.log("Debug - Hardcoded URL:", hardcodedUrl);
+  
+  // Return the correct URL
+  if (envUrl && !envUrl.includes('localhost')) {
+    return envUrl;
+  }
+  return hardcodedUrl;
+};
 export default function Browse() {
   const [listings, setListings] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -18,14 +31,14 @@ export default function Browse() {
   useEffect(() => {
     const fetchApprovedListings = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/listings/approved`, {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          credentials: 'include'
-        });
-
+        const API_BASE_URL = getApiBaseUrl();
+const response = await fetch(`${API_BASE_URL}/listings/approved`, {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  credentials: 'include'
+});
         if (!response.ok) {
           throw new Error('Failed to fetch listings');
         }
