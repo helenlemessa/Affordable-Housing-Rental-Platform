@@ -10,7 +10,8 @@ const app = express();
 // Middleware
 app.use(cookieParser());
 app.use(cors({
-  origin: ['https://affordable-housing-rental-platform.vercel.app', "http://127.0.0.1:5173"],
+  origin: ['https://affordable-housing-rental-platform.vercel.app', "http://127.0.0.1:5173",  'http://localhost:5174',                                 // Your current local dev
+    'http://localhost:5173'],                             // Your current local dev 
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
