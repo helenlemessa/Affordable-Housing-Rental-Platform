@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { API_ENDPOINTS } from '../config/api';
+import { API_ENDPOINTS } from '../../config/api';
 export default function PendingListings() {
   const [listings, setListings] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -64,7 +64,7 @@ export default function PendingListings() {
   const handleApprove = async (listingId, comments = '') => {
     try {
       const token = localStorage.getItem('adminToken') || localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/admin/approve-listing/${listingId}`, {
+     const response = await fetch(API_ENDPOINTS.ADMIN_APPROVE_LISTING(listingId), {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -89,7 +89,7 @@ export default function PendingListings() {
   const handleReject = async (listingId, comments = 'Listing rejected') => {
     try {
       const token = localStorage.getItem('adminToken') || localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/admin/reject-listing/${listingId}`, {
+     const response = await fetch(API_ENDPOINTS.ADMIN_REJECT_LISTING(listingId), {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,

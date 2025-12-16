@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DashboardCard from '../../Components/DashboardCard';
-import { API_ENDPOINTS } from '../config/api';
+import { API_ENDPOINTS } from '../../config/api';
 export default function AdminDashboard() {
   const [stats, setStats] = useState(null);
   const [error, setError] = useState(null);

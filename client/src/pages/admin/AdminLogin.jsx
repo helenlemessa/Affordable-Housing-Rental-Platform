@@ -1,7 +1,7 @@
 // src/pages/admin/AdminLogin.jsx
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { API_ENDPOINTS } from '../config/api';
+import { API_ENDPOINTS } from '../../config/api';
 export default function AdminLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

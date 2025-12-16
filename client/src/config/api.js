@@ -20,7 +20,9 @@ export const API_ENDPOINTS = {
   ADMIN_USERS: `${API_BASE_URL}/admin/users`,
   ADMIN_NEW_USERS: `${API_BASE_URL}/admin/users/new`,
   ADMIN_VERIFY: `${API_BASE_URL}/admin/verify`,
-  
+  ADMIN_APPROVE_LISTING: (id) => `${API_BASE_URL}/admin/approve-listing/${id}`,
+  ADMIN_REJECT_LISTING: (id) => `${API_BASE_URL}/admin/reject-listing/${id}`,
+ 
   // WebSocket
   WS_NOTIFICATIONS: `${API_BASE_URL.replace('http', 'ws').replace('/api', '')}/ws/notifications`
 };

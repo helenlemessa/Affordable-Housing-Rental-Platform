@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { API_ENDPOINTS } from '../config/api';
+import { API_ENDPOINTS } from '../../config/api';
 export default function NewUsers() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
